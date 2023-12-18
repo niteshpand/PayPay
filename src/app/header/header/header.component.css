@@ -1,8 +1,24 @@
+body {
+  justify-content: center;
+}
+.container {
+  justify-content: center;
+  overflow: hidden;
+  width: 50vw;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .cont1 {
   background-color: rgb(6, 6, 144);
 }
-.cont2{
-    background-color: rgb(243, 200, 149);
+.cont2 {
+  background-color: rgb(243, 200, 149);
 }
 .pay-head {
   padding-left: 4vw;
@@ -11,22 +27,22 @@
   background-color: rgb(6, 6, 144);
 }
 .pay-convert {
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 5vw;
   background-color: rgb(6, 6, 144);
   width: 20vw;
   padding-bottom: 2vw;
 }
 .pay-convert1 {
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 5vw;
   background-color: rgb(243, 200, 149);
   width: 20vw;
   padding-bottom: 2vw;
 }
- .pay-convert input {
+.pay-convert input {
   height: 5vw;
-  width: 50vw;
+  width: 25vw;
   background-color: rgb(6, 6, 144);
   color: rgb(243, 200, 149);
   font-size: 4vw;
@@ -36,15 +52,15 @@
   border-top: solid rgb(6, 6, 144);
 }
 .pay-convert input[type="text"]:focus {
-    outline: none;
-    border-left-color: solid rgb(6, 6, 144);;
-    border-right-color: solid rgb(6, 6, 144);
-    border-top-color: solid rgb(6, 6, 144);
-    border-top-color: solid rgb(6, 6, 144);
+  outline: none;
+  border-left-color: solid rgb(6, 6, 144);
+  border-right-color: solid rgb(6, 6, 144);
+  border-top-color: solid rgb(6, 6, 144);
+  border-top-color: solid rgb(6, 6, 144);
 }
- .pay-convert1 input {
+.pay-convert1 input {
   height: 5vw;
-  width: 50vw;
+  width: 25vw;
   background-color: rgb(243, 200, 149);
   color: rgb(6, 6, 144);
   font-size: 4vw;
@@ -54,9 +70,9 @@
   border-top: solid rgb(243, 200, 149);
 }
 .pay-convert1 input[type="text"]:focus {
-    outline: none;
-    border-left-color: solid rgb(243, 200, 149);
-    border-right-color: solid rgb(243, 200, 149);
-    border-top-color: solid rgb(243, 200, 149);
-    border-top-color: solid rgb(243, 200, 149);
+  outline: none;
+  border-left-color: solid rgb(243, 200, 149);
+  border-right-color: solid rgb(243, 200, 149);
+  border-top-color: solid rgb(243, 200, 149);
+  border-top-color: solid rgb(243, 200, 149);
 }
