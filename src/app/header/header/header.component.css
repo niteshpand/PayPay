@@ -1,0 +1,59 @@
+.cont1 {
+  background-color: rgb(6, 6, 144);
+}
+.pay-head {
+  padding-left: 4vw;
+  padding-top: 5vw;
+  color: #fff;
+  background-color: rgb(6, 6, 144);
+}
+.pay-convert {
+  padding-top: 20%;
+  padding-left: 5vw;
+  background-color: rgb(6, 6, 144);
+  width: 20vw;
+  padding-bottom: 2vw;
+}
+.pay-convert1 {
+  padding-top: 20%;
+  padding-left: 5vw;
+  background-color: rgb(243, 200, 149);
+  width: 20vw;
+  padding-bottom: 2vw;
+}
+ .pay-convert input {
+  height: 5vw;
+  width: 50vw;
+  background-color: rgb(6, 6, 144);
+  color: rgb(243, 200, 149);
+  font-size: 4vw;
+  border-bottom: 3px solid #fff;
+  border-left: solid rgb(6, 6, 144);
+  border-right: solid rgb(6, 6, 144);
+  border-top: solid rgb(6, 6, 144);
+}
+.pay-convert input[type="text"]:focus {
+    outline: none;
+    border-left-color: solid rgb(6, 6, 144);;
+    border-right-color: solid rgb(6, 6, 144);
+    border-top-color: solid rgb(6, 6, 144);
+    border-top-color: solid rgb(6, 6, 144);
+}
+ .pay-convert1 input {
+  height: 5vw;
+  width: 50vw;
+  background-color: rgb(243, 200, 149);
+  color: rgb(6, 6, 144);
+  font-size: 4vw;
+  border-bottom: 3px solid #fff;
+  border-left: solid rgb(243, 200, 149);
+  border-right: solid rgb(243, 200, 149);
+  border-top: solid rgb(243, 200, 149);
+}
+.pay-convert1 input[type="text"]:focus {
+    outline: none;
+    border-left-color: solid rgb(243, 200, 149);
+    border-right-color: solid rgb(243, 200, 149);
+    border-top-color: solid rgb(243, 200, 149);
+    border-top-color: solid rgb(243, 200, 149);
+}

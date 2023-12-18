@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header/header.component';
+import { ConvertComponent } from './convert/convert/convert.component';
+import { ConvertToComponent } from './convertTo/convert-to/convert-to.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ConvertComponent,
+    ConvertToComponent
   ],
   imports: [
     BrowserModule,
