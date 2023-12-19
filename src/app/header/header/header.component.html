@@ -1,17 +1,20 @@
 <div class="container">
-    <div class="cont1">
-        <h1 class="pay-head">PayPay</h1>
-        <hr>
-        <div class="pay-convert">
-
-            <input type="text">
+    <form>
+        <div class="cont1">
+            <h1 class="pay-head">PayPay</h1>
+            <hr>
+            <div class="pay-convert">
+                <div>{{data1()}}</div>
+                
+                <input type="text" [(ngModel)]="currencyTo" name="currencyTo" placeholder="currency">
+            </div>
         </div>
-        
-    </div>
-    <div class="cont2">
-        <div class="pay-convert1">
 
-            <input type="text">
+        <div class="cont2">
+            <div class="pay-convert1">
+                <input type="text" [(ngModel)]="currencyFrom" name='currencyFrom' placeholder="currency">
+            </div>
         </div>
-    </div>
+    </form>
+
 </div>

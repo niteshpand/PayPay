@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header/header.component';
 import { ConvertComponent } from './convert/convert/convert.component';
 import { ConvertToComponent } from './convertTo/convert-to/convert-to.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { ConvertToComponent } from './convertTo/convert-to/convert-to.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
