@@ -5,14 +5,31 @@
             <hr>
             <div class="pay-convert">
                 <div>{{data1()}}</div>
-                
-                <input type="text" [(ngModel)]="currencyTo" name="currencyTo" placeholder="currency">
+
+                <input type="text" [(ngModel)]="currencyTo" name="currencyTo" [(ngModel)]="selected">
+                <select class="dropdown" [(ngModel)]="selected" name="currencyName" id="currency">
+                    <option class="toggle" value="rupee">rupee</option>
+                    <option class="toggle" value="Aed">Aed</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                    <option class="toggle" value="Aed">Aed</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                </select>
             </div>
         </div>
 
         <div class="cont2">
             <div class="pay-convert1">
-                <input type="text" [(ngModel)]="currencyFrom" name='currencyFrom' placeholder="currency">
+                <input type="text" list="selected" name='currencyFrom' [(ngModel)]="selected"
+                    [(ngModel)]="currencyFrom">
+                <select class="dropdown" [(ngModel)]="selected" name="currencyName" id="currency">
+                    <option class="toggle" value="rupee">rupee</option>
+                    <option class="toggle" value="Aed">Aed</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                    <option class="toggle" value="Aed">Aed</option>
+                    <option class="toggle" value="Uae">Uae</option>
+                </select>
             </div>
         </div>
     </form>

@@ -1,5 +1,6 @@
 body {
   justify-content: center;
+  overflow: hidden;
 }
 .container {
   justify-content: center;
@@ -10,8 +11,8 @@ body {
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 1em;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
 .cont1 {
@@ -75,4 +76,19 @@ body {
   border-right-color: solid rgb(243, 200, 149);
   border-top-color: solid rgb(243, 200, 149);
   border-top-color: solid rgb(243, 200, 149);
+}
+
+.dropdown {
+  width: 4rem;
+  height: 2.5rem;
+  font-size: 1vw;
+  border-radius: 5px;
+  margin: 0.3vw;
+  background-color: transparent;
+  color: #fff;
+}
+
+.toggle{
+  background-color: rgb(123, 120, 120);
+  color: #fff;
 }
