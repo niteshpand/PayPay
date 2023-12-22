@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   currencyTo: number = 0;
   currencyFrom: number = 0;
-  selected: string = '';
+  selectedTo: string = '';
+  selectedFrom: string = '';
   value: string = '';
+  result1: number = 0;
+  result2: number = 0;
 
   data1() {
-    this.currencyFrom = this.currencyTo;
-  }
-
-  onSelected(value: string) {
-    this.selected = value;
+    this.result1 = this.currencyTo * 2;
+    this.result2 = this.currencyFrom / 2;
   }
 }

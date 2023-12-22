@@ -4,10 +4,9 @@
             <h1 class="pay-head">PayPay</h1>
             <hr>
             <div class="pay-convert">
-                <div>{{data1()}}</div>
-
-                <input type="text" [(ngModel)]="currencyTo" name="currencyTo" [(ngModel)]="selected">
-                <select class="dropdown" [(ngModel)]="selected" name="currencyName" id="currency">
+                <input type="text" [(ngModel)]="currencyTo" [(ngModel)]="selectedTo" name="currencyTo" [(ngModel)]="result2"
+                    (ngModelChange)="data1()">
+                <select class="dropdown" [(ngModel)]="selectedTo" name="currencyTo" id="currency">
                     <option class="toggle" value="rupee">rupee</option>
                     <option class="toggle" value="Aed">Aed</option>
                     <option class="toggle" value="Uae">Uae</option>
@@ -20,9 +19,9 @@
 
         <div class="cont2">
             <div class="pay-convert1">
-                <input type="text" list="selected" name='currencyFrom' [(ngModel)]="selected"
-                    [(ngModel)]="currencyFrom">
-                <select class="dropdown" [(ngModel)]="selected" name="currencyName" id="currency">
+                <input type="text" list="selected" name='currencyFrom'[(ngModel)]="selectedFrom" [(ngModel)]="currencyFrom" [(ngModel)]="result1"
+                    (ngModelChange)="data1()">
+                <select class="dropdown" [(ngModel)]="selectedFrom" name="currencyFrom" id="currency">
                     <option class="toggle" value="rupee">rupee</option>
                     <option class="toggle" value="Aed">Aed</option>
                     <option class="toggle" value="Uae">Uae</option>
@@ -30,6 +29,7 @@
                     <option class="toggle" value="Aed">Aed</option>
                     <option class="toggle" value="Uae">Uae</option>
                 </select>
+
             </div>
         </div>
     </form>
