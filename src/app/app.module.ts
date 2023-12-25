@@ -7,21 +7,23 @@ import { HeaderComponent } from './header/header/header.component';
 import { ConvertComponent } from './convert/convert/convert.component';
 import { ConvertToComponent } from './convertTo/convert-to/convert-to.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ConvertComponent,
-    ConvertToComponent
+    ConvertToComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
