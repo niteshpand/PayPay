@@ -4,31 +4,25 @@
             <h1 class="pay-head">PayPay</h1>
             <hr>
             <div class="pay-convert">
-                <input type="text" [(ngModel)]="currencyTo" [(ngModel)]="selectedTo" name="selectedTo"
-                    [(ngModel)]="result2" (ngModelChange)="data1()">
-                <select class="dropdown" [(ngModel)]="selectedTo" name="selectedTo" id="currency">
-                    <option *ngFor="let select of selectedTo | keyvalue" class="toggle" [value]="select">
+
+                <input type="text" [placeholder]="selectedCurrency" name="selectedTo" [(ngModel)]="amount1"
+                    (change)="data1()">
+                <select class="dropdown" [(ngModel)]="selectedCurrency" name="selectedTo" id="currency">
+                    <option *ngFor="let select of selectedTo | keyvalue" class="toggle" [value]="select.key">
                         {{select.key}}</option>
-                    <!-- <option class="toggle" value="Aed">Aed</option>
-                    <option class="toggle" value="Uae">Uae</option>
-                    <option class="toggle" value="Uae">Uae</option>
-                    <option class="toggle" value="Aed">Aed</option>
-                    <option class="toggle" value="Uae">Uae</option> -->
                 </select>
             </div>
         </div>
 
         <div class="cont2">
             <div class="pay-convert1">
-                <input type="text" list="selected" name='currencyFrom' [(ngModel)]="selectedFrom"
-                    [(ngModel)]="currencyFrom" [(ngModel)]="result1" (ngModelChange)="data1()">
-                <select class="dropdown" [(ngModel)]="selectedFrom" name="currencyFrom" id="currency">
-                    <option class="toggle" value="rupee">rupee</option>
-                    <option class="toggle" value="Aed">Aed</option>
-                    <option class="toggle" value="Uae">Uae</option>
-                    <option class="toggle" value="Uae">Uae</option>
-                    <option class="toggle" value="Aed">Aed</option>
-                    <option class="toggle" value="Uae">Uae</option>
+                <input type="text" list="selected" name='selectedFrom' [placeholder]="selectedCurrencyFrom"
+                    [(ngModel)]="amount2"(change)="data()">
+
+                <select class="dropdown" [(ngModel)]="selectedCurrencyFrom" name="selectedFrom" id="currency">
+                    <option *ngFor="let select of selectedFrom|keyvalue" class="toggle" [value]="select.key">
+                        {{select.key}}</option>
+
                 </select>
 
             </div>

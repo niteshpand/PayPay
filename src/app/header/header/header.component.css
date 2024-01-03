@@ -87,8 +87,14 @@ body {
   background-color: transparent;
   color: #fff;
 }
+.dropdown select{
+  height:10px
+}
 
-.toggle{
+.toggle {
+  height: fit-content;
   background-color: rgb(123, 120, 120);
   color: #fff;
+  font-size: 1.5vw;
+  
 }

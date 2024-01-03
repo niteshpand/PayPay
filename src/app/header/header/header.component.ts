@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderService } from '../header.service';
-import { Observable } from 'rxjs';
+import { query } from '@angular/animations';
 
 @Component({
   selector: 'app-header',
@@ -8,29 +8,62 @@ import { Observable } from 'rxjs';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  currencyTo: number = 0;
-  currencyFrom: number = 0;
-  selectedCurrency='USD'
-  obj: Object = {};
+  currencyTo: string;
+  currencyFrom: string;
   selectedTo: { [key: string]: number } = {};
   selectedFrom: { [key: string]: number } = {};
-  result1: number = 0;
-  result2: number = 0;
+  amount2: number;
+  amount1: number;
+  amountRes1: number;
 
+  // res: any = { query: { amount: 0, from: '', to: '' } };
+
+  selectedCurrency: string='...';
+  selectedCurrencyFrom: string='...';
+  result: number;
   constructor(private service: HeaderService) {}
 
   ngOnInit() {
-    this.service.getConversion().subscribe((val) => {
-      console.log(val.query);
-    });
+    // this.data();
+    // this.data1();
+    this.updateCurrencyFrom();
+    this.updateCurrency();
+  }
 
+  updateCurrency() {
     this.service.getCurrency().subscribe((val) => {
       this.selectedTo = val.rates;
     });
   }
+  updateCurrencyFrom() {
+    this.service.getCurrency().subscribe((val) => {
+      this.selectedFrom = val.rates;
+    });
+  }
 
   data1() {
-    this.result1 = this.currencyTo * 2;
-    this.result2 = this.currencyFrom / 2;
+    this.service
+      .getConversion(
+        this.selectedCurrency,
+        this.selectedCurrencyFrom,
+        this.amount1
+      )
+      .subscribe((res) => {
+        this.amountRes1 = res.result;
+        this.amount2 = this.amountRes1
+      });
+  }
+
+  data() {
+    this.service
+    .getConversion(
+      this.selectedCurrency,
+      this.selectedCurrencyFrom,
+      this.amount2
+    )
+    .subscribe((res) => {
+      this.amountRes1 = res.result;
+      this.amount1 = this.amountRes1
+    });
   }
 }
