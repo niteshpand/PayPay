@@ -13,11 +13,10 @@
                 </select>
             </div>
         </div>
-
         <div class="cont2">
             <div class="pay-convert1">
                 <input type="text" list="selected" name='selectedFrom' [placeholder]="selectedCurrencyFrom"
-                    [(ngModel)]="amount2"(change)="data()">
+                    [(ngModel)]="amount2" (change)="data()">
 
                 <select class="dropdown" [(ngModel)]="selectedCurrencyFrom" name="selectedFrom" id="currency">
                     <option *ngFor="let select of selectedFrom|keyvalue" class="toggle" [value]="select.key">

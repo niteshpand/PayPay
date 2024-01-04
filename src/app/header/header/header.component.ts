@@ -15,17 +15,16 @@ export class HeaderComponent {
   amount2: number;
   amount1: number;
   amountRes1: number;
+  amountRes2: number;
 
   // res: any = { query: { amount: 0, from: '', to: '' } };
 
-  selectedCurrency: string='...';
-  selectedCurrencyFrom: string='...';
+  selectedCurrency: string = '';
+  selectedCurrencyFrom: string = '';
   result: number;
   constructor(private service: HeaderService) {}
 
   ngOnInit() {
-    // this.data();
-    // this.data1();
     this.updateCurrencyFrom();
     this.updateCurrency();
   }
@@ -50,20 +49,22 @@ export class HeaderComponent {
       )
       .subscribe((res) => {
         this.amountRes1 = res.result;
-        this.amount2 = this.amountRes1
+        this.amount2 = this.amountRes1;
       });
   }
 
   data() {
     this.service
-    .getConversion(
-      this.selectedCurrency,
-      this.selectedCurrencyFrom,
-      this.amount2
-    )
-    .subscribe((res) => {
-      this.amountRes1 = res.result;
-      this.amount1 = this.amountRes1
-    });
+      .getConversion(
+        this.selectedCurrencyFrom,
+        this.selectedCurrency,
+        this.amount2
+      )
+      .subscribe((res) => {
+        this.amountRes2 = res.result;
+        this.amount1 = this.amountRes2;
+      });
   }
+
+  interchange() {}
 }
