@@ -87,8 +87,8 @@ body {
   background-color: transparent;
   color: #fff;
 }
-.dropdown select{
-  height:10px
+.dropdown select {
+  height: 10px;
 }
 
 .toggle {
@@ -96,5 +96,10 @@ body {
   background-color: rgb(123, 120, 120);
   color: #fff;
   font-size: 1.5vw;
-  
+}
+.imageForSwap {
+  text-align: end;
+  color:#fff;
+  padding-right: 15%;
+  background: linear-gradient(0deg, rgb(243, 200, 149) 50%, rgb(6, 6, 144) 50%);
 }

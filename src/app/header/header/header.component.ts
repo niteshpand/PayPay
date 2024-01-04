@@ -66,5 +66,9 @@ export class HeaderComponent {
       });
   }
 
-  interchange() {}
+  interchange() {
+    const temp = this.selectedCurrency
+    this.selectedCurrency = this.selectedCurrencyFrom
+    this.selectedCurrencyFrom = temp
+  }
 }
