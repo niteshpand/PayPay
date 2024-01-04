@@ -11,8 +11,8 @@ body {
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 1em;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .cont1 {
@@ -87,19 +87,32 @@ body {
   background-color: transparent;
   color: #fff;
 }
-.dropdown select {
-  height: 10px;
+.dropdown select option {
+  width: 10rem;
 }
 
 .toggle {
-  height: fit-content;
+  
+  width: 8rem;
   background-color: rgb(123, 120, 120);
   color: #fff;
   font-size: 1.5vw;
 }
+
 .imageForSwap {
   text-align: end;
-  color:#fff;
+  color: #fff;
   padding-right: 15%;
   background: linear-gradient(0deg, rgb(243, 200, 149) 50%, rgb(6, 6, 144) 50%);
+}
+.imageForSwap img {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.imageForSwap img:hover {
+  background-color: #939191;
+  
+  
 }
